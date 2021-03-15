@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!---tutorial URL https://www.youtube.com/watch?v=yQimoqo0-7g-->
 <html>
@@ -6,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name = "viewport" content = "width=device-width, initial-scale = 1.0" >
     <title>Redstore | Ecommerce</title>
-    <link rel="stylesheet" href = "css/esco.css">
+    <link rel="stylesheet" href = "style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
@@ -14,7 +13,7 @@
 <body>
 <div class="header">
 <div class = "container">
-    <div class = "navbar">
+    <!-- <div class = "navbar">
         <div class = "logo">
             <img src = "https://www.smartoffice.jp/images/newEggs_esco.png" width = "125px">
         </div>
@@ -26,24 +25,39 @@
                 <li><a href="">Contact</a></li>
                 <li><a href="">Account</a></li>
             </ul>
-        </nav>
+        </nav> -->
+
+<!-- responsive navbar -->
+<div class="topnav" id="myTopnav">
+    <a href="#home" class="active">トップ</a>
+    <a href="#news">ニュース</a>
+    <a href="#contact">お問い合わせ</a>
+    <a href="#about">ESCOについて</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <!-- end respnsive navbar -->
+
         <!-- <img src="images/cart.png" width="30px" height="30px"> -->
         <img src="images/menu.png" class = "menu-icon" onclick = "menutoggle()">
     </div>
+
+
 <div class = "row">
    <div class="col-2">
-<!-- 
-    <h1> 工具、機器、部品、消耗品、備品</h1>   
-    <p> 私たちは、厳選した間接・副資材を
-        充実した在庫と物流システムで
-        現場まで直送します!!
-        (※国内ユーザー対象)
-    </p>        -->
     <h1>ESCO</h1>
+    <h2 style="font-size: 15px; padding: 12px;">工場・工具現場・オフィス・ビル・施設 用</h2>
+    <h2 style="font-size: 20px; padding: 12px;" > 工具、機器、部品、消耗品、備品</h2>   
+    <p style="font-size: 10px; padding:  12px;"> 
+        私たちは、厳選した間接・副資材を<br>
+        充実した在庫と物流システムで<br>
+        現場まで直送します!!<br>
+        (※国内ユーザー対象)</p>   
     <a href="" class="btn">元見る &#8594;</a>     
    </div>
    <div class="col-2">
-    <img src="img/header_img2.png">
+    <img class="header-img" src="img/header_img2.png">
    </div>  
 </div>
 </div>
@@ -57,15 +71,17 @@
             <div class="col-3">
                 <img src="https://images-na.ssl-images-amazon.com/images/I/7144cb7vx5L._SX522_.jpg">
             <h4>援質円話ラまべょ内村ば究健ぼひに神明ち図搬利ぶッ正横せひ馬見ネキルツ写証チ凶市乙吟イぴよ。大生ッのよ整本ノイワカ行真テネタ宮注ロ交81荒衝貨61扶そ口粘ひッ与柱トイリぴ軍大ヒ逮店アハ光氏北オト初千さクお権段セ医21略クル。</h4>
-
+                <a href="" class="btn">元見る &#8594;</a>     
             </div>
             <div class="col-3">
                 <img src="https://www.esco-net.com/wcs/escort/ItemFile/EA0/EA011/EA11/EA11_IMG_WEB_OUT(01).jpg">
             <h4>援質円話ラまべょ内村ば究健ぼひに神明ち図搬利ぶッ正横せひ馬見ネキルツ写証チ凶市乙吟イぴよ。大生ッのよ整本ノイワカ行真テネタ宮注ロ交81荒衝貨61扶そ口粘ひッ与柱トイリぴ軍大ヒ逮店アハ光氏北オト初千さクお権段セ医21略クル。</h4>
+                <a href="" class="btn">元見る &#8594;</a>     
             </div>    
             <div class="col-3">
                 <img src="https://www.esco-net.com/wcs/escort/ItemFile/EA6/EA612/EA612SD-3/EA612SD-3_IMG_WEB_OUT(01).jpg">
             <h4>援質円話ラまべょ内村ば究健ぼひに神明ち図搬利ぶッ正横せひ馬見ネキルツ写証チ凶市乙吟イぴよ。大生ッのよ整本ノイワカ行真テネタ宮注ロ交81荒衝貨61扶そ口粘ひッ与柱トイリぴ軍大ヒ逮店アハ光氏北オト初千さクお権段セ医21略クル。</h4>
+                <a href="" class="btn">元見る &#8594;</a>     
             </div>
          </div>
     
@@ -287,5 +303,17 @@
     </div>
 </div>
 
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+
 </body>
 </html>
+
