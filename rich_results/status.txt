@@ -1,0 +1,6 @@
+The file rich_results3.html seems like a good model 
+for making more pages. no errors. But it does not give me 
+a preview. 
+
+this link is useful
+https://developers.google.com/search/docs/guides/sd-policies
